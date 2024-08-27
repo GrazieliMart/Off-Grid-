@@ -172,3 +172,26 @@ window.addEventListener('load', () => {
       });
   });
 });
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });  document.addEventListener('keydown', function(event) {
+    // Desabilitar F12
+    if (event.keyCode === 123) {
+      event.preventDefault();
+    }
+
+    // Desabilitar Ctrl+Shift+I (Ferramentas de desenvolvedor)
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+      event.preventDefault();
+    }
+
+    // Desabilitar Ctrl+U (Visualizar código-fonte)
+    if (event.ctrlKey && event.keyCode === 85) {
+      event.preventDefault();
+    }
+
+    // Desabilitar Ctrl+Shift+C (Inspecionar elemento)
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 67) {
+      event.preventDefault();
+    }
+  });
