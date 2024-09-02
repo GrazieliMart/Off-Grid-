@@ -55,13 +55,25 @@ container.appendChild(renderer.domElement);
 // Set how far the camera will be from the 3D model
 camera.position.z = objToRender === "dino" ? 95 : 160;
 
-// Add lights to the scene, so we can actually see the 3D model
-const topLight = new THREE.DirectionalLight(0xffffff, 30); // (color, intensity)
-topLight.position.set(100, 100, 100); // top-left-ish
+// Function to adjust light color saturation
+function adjustSaturation(hexColor, saturationFactor) {
+  const color = new THREE.Color(hexColor);
+  const hsl = { h: 0, s: 0, l: 0 };
+  color.getHSL(hsl);
+  hsl.s *= saturationFactor; // Reduce the saturation
+  color.setHSL(hsl.h, hsl.s, hsl.l);
+  return color;
+}
+
+// Create a light with reduced saturation
+const desaturatedColor = adjustSaturation(0xffffff, 0.2); // 50% of original saturation
+const topLight = new THREE.DirectionalLight(desaturatedColor, 5); // (color, intensity)
+topLight.position.set(100, 100, 100);
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "dino" ? 5 : 1);
+
+const ambientLight = new THREE.AmbientLight(0x10, objToRender === "dino" ? 5 : 1);
 scene.add(ambientLight);
 
 // This adds controls to the camera, so we can rotate / zoom it with the mouse

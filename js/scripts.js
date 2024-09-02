@@ -92,8 +92,7 @@ window.addEventListener('scroll', () => {
       }, 600);
   });
  
-  
-const slides = document.querySelectorAll('.carousel-item');
+  const slides = document.querySelectorAll('.carousel-item');
 const dots = document.querySelectorAll('.dot');
 let currentIndex = 0;
 let slideInterval;
@@ -110,23 +109,25 @@ function showSlide(index) {
   document.querySelector('.carousel-slide').style.transform = `translateX(-${index * 100}%)`;
 }
 
-// Função para mudar o slide automaticamente
-function startCarousel() {
-  slideInterval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }, 4000); // 2 segundos de intervalo
+// Função para avançar para o próximo slide
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
 }
 
-// Pausa o carrossel quando o usuário interage com os dots
-dots.forEach(dot => {
-  dot.addEventListener('click', (event) => {
-    clearInterval(slideInterval);
-    currentIndex = parseInt(event.target.getAttribute('data-slide'));
-    showSlide(currentIndex);
-    startCarousel(); // Reinicia o carrossel após a interação
-  });
+// Inicia o intervalo para trocar os slides automaticamente a cada 2 segundos
+slideInterval = setInterval(nextSlide, 2000);
+
+// Adiciona a troca automática dos slides ao carregar a página
+window.addEventListener('load', () => {
+  showSlide(currentIndex);
+  slideInterval;
 });
+
+// Verifica a rolagem para mudar a cor do título e linha
+window.addEventListener('scroll', checkScroll);
+checkScroll(); // Verificação inicial ao carregar a página
+
 
 window.addEventListener('load', () => {
   const faqItems = document.querySelectorAll('.fac-div-faq-item');
@@ -137,6 +138,7 @@ window.addEventListener('load', () => {
       const icon = faqTitle.querySelector('i'); // Seleciona o ícone dentro do título
 
       faqTitle.addEventListener('click', () => {
+          console.log('FAQ title clicked:', faqTitle.textContent); // Debugging line
           const isOpen = faqContent.classList.contains('open');
 
           // Fecha todos os conteúdos abertos e redefine os ícones
@@ -149,11 +151,13 @@ window.addEventListener('load', () => {
 
           // Abre ou fecha o conteúdo clicado
           if (!isOpen) {
+              console.log('Opening content:', faqContent); // Debugging line
               faqContent.classList.add('open');
               faqContent.style.maxHeight = faqContent.scrollHeight + "px";
               item.classList.add('open');
               icon.classList.replace('bi-arrow-right-short', 'bi-arrow-down-short'); // Troca o ícone para a seta para baixo
           } else {
+              console.log('Closing content:', faqContent); // Debugging line
               faqContent.classList.remove('open');
               faqContent.style.maxHeight = null;
               item.classList.remove('open');
@@ -172,6 +176,7 @@ window.addEventListener('load', () => {
       });
   });
 });
+
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
   });  document.addEventListener('keydown', function(event) {

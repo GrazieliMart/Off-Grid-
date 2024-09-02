@@ -6,7 +6,35 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="assets/favicon.gif" type="image/gif">
  <title>OFF GRID ENERGY I HOME SOLAR ENERGY</title>
-   
+   <style>.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 65px;
+    box-shadow: 0px 10px 20px #000000;
+    border-radius: 20px;
+    position: relative;
+    background-color: #ffffff;
+    color: #fff;
+    border: 1px solid #f3f3f3;
+}
+.form-container {
+    width: 80%;
+    margin-left: -100px;
+}
+#states {
+    width: 102%;
+    padding: 13px;
+}
+.info-form-container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000000, #122814, #0d100d);
+    padding: 40px 40px 40px 0px;
+    border-radius: 0px;
+}</style>
 </head>
 <body>
    
@@ -84,8 +112,9 @@
 
         <!-- Bottom Overlay Content -->
         <div class="overlay-content-bottom">
-           <a href="services.html"><button>SERVICES</button></a> 
-           <a href="contact.html"><button>GET A QUOTE</button></a> 
+           <a href="contact.html">
+            
+            <button id="quote">GET A QUOTE</button></a> 
         </div>
       <script type="module" src="js/main.js"></script>
     </div> 
@@ -109,25 +138,25 @@
           <div class="carousel-container">
             <div class="carousel-slide">
               <div class="carousel-item active">
-                <video src="assets/slide (1).mp4" autoplay loop muted></video>
+                <video src="assets/slide (4).mp4" autoplay loop muted></video>
                 <div class="carousel-text">
                   <img src="assets/logo-white-off.png" alt="">
                   <div class="abs-img">
                     <img src="assets/favicon.gif" alt="" id="absolute-img">
                   </div>
                   <h1 class="carousel-heading">Power a Sustainable Home</h1>
-                  <hr class="carousel-hr">
+                 
                   <p>Generate your own clean energy whenever the sun is shining with Off Grid Energy.<br><br>All of our products optimize your energy usage and saving while minimizing your impact on the environment.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <video src="assets/slide (2).mp4" autoplay loop muted></video>
+                <video src="assets/slide (1).mp4" autoplay loop muted></video>
                 <div class="carousel-text">
                   <img src="assets/logo-white-off.png" alt="">
                   <div class="abs-img">
                   <img src="assets/favicon.gif" alt="" id="absolute-img"></div>
                   <h1 class="carousel-heading">Off Grid Energy</h1>
-                  <hr class="carousel-hr">
+                
                   <p>Generate your own clean energy whenever the sun is shining with Off Grid Energy.<br><br>At Off Grid Energy, we specialize in providing innovative solar solutions designed to give you independence from the grid.</p>
                 </div>
               </div>
@@ -138,19 +167,19 @@
                   <img src="assets/logo-white-off.png" alt="">
                   <img src="assets/favicon.gif" alt="" id="absolute-img">
                   <h1 class="carousel-heading">Use Energy</h1>
-                  <hr class="carousel-hr">
+                 
                   <p>Power everything from your TV to the internet with solar energy.</p>
                 </div>
               </div>
           
               <div class="carousel-item">
-                <video src="assets/slide (4).mp4" autoplay loop muted></video>
+                <video src="assets/slide (2).mp4" autoplay loop muted></video>
                 <div class="carousel-text">
                   <img src="assets/logo-white-off.png" alt="">
 
                   <img src="assets/favicon.gif" alt="" id="absolute-img">
                   <h1 class="carousel-heading">Easy Installation</h1>
-                  <hr class="carousel-hr">
+                 
                   <p>Experience the convenience of easy installation with our solar solutions.</p>
                 </div>
               </div>
@@ -216,7 +245,7 @@
     
       
 
-    <div class="scroll-line"></div>
+   
 
     <div class="image-slider-google">
       <img src="assets/icons (1).png" alt="Imagem 1">
@@ -239,124 +268,132 @@
       
         <!-- Segunda linha: Texto e ícones à esquerda, formulário à direita -->
         <div class="info-form-container">
-          <div class="icons-container">
-           <img src="assets/icon-img.png" alt="">
-            <hr>
-           <div class="icons">
-              <div class="icon-item">
-                <img src="assets/i (1).png" alt="Ícone 1">
-                <h1>California, U.S</h1>
-               
-              </div>
-              
-              <div class="icon-item">
-                <img src="assets/i (2).png" alt="Ícone 2">
-                <h1>Solar Energy</h1>
-              </div>
-              <div class="icon-item">
-                <img src="assets/i (4).png" alt="Ícone 4">
-               <a href=""> <h1>@offgrid.team</h1></a>
-              </div>
-            </div>
-          </div>
+        
           <div class="form-container">
             
             <form class="form">
-                <p class="title">Get a free personalized quote</p>
-                <p class="message" style="margin-top: -20px;">All fields are required.</p>
-                
-                <div class="flex" id="name-div">
-                    <label id="Firstname">
-                        <input class="input" type="text" placeholder="" required="">
-                        <span>Firstname</span>
-                    </label>
-                    
-                    <label>
-                        <input class="input" type="text" placeholder="" required="">
-                        <span>Lastname</span>
-                    </label>
-                </div>
-                
-               
-                <label>
+              <p class="title">Get a free personalized quote</p>
+              <p class="message" style="margin-top: -20px;">All fields are required.</p>
+              
+              <div class="flex" id="name-div">
+                  <label id="Firstname">
+                      <input class="input" type="text" placeholder="" required="">
+                      <span>Firstname</span>
+                  </label>
+                  
+                  <label>
+                      <input class="input" type="text" placeholder="" required="">
+                      <span>Lastname</span>
+                  </label>
+              </div>
+              <script src="js/scripts.js"></script>
+              <label>
                   <input class="input" type="email" placeholder="" required="">
                   <span>Email</span>
               </label>
-                <label>
-                    <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
-                    <span>Phone Number</span>
-                </label>
-                
-                <label id="states-label">
-                    <select class="input" required="" id="states">
-                        <option value="" disabled selected>Select State</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="KY">Kentucky</option>
-                        <option value="LA">Louisiana</option>
-                        <option value="ME">Maine</option>
-                        <option value="MD">Maryland</option>
-                        <option value="MA">Massachusetts</option>
-                        <option value="MI">Michigan</option>
-                        <option value="MN">Minnesota</option>
-                        <option value="MS">Mississippi</option>
-                        <option value="MO">Missouri</option>
-                        <option value="MT">Montana</option>
-                        <option value="NE">Nebraska</option>
-                        <option value="NV">Nevada</option>
-                        <option value="NH">New Hampshire</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="NM">New Mexico</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="ND">North Dakota</option>
-                        <option value="OH">Ohio</option>
-                        <option value="OK">Oklahoma</option>
-                        <option value="OR">Oregon</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="RI">Rhode Island</option>
-                        <option value="SC">South Carolina</option>
-                        <option value="SD">South Dakota</option>
-                        <option value="TN">Tennessee</option>
-                        <option value="TX">Texas</option>
-                        <option value="UT">Utah</option>
-                        <option value="VT">Vermont</option>
-                        <option value="VA">Virginia</option>
-                        <option value="WA">Washington</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                    </select>
-                  
-                </label>
-             
-                
-                <label>
-                    <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
-                    <span>Zip Code</span>
-                </label>
-                
-                <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
-                
-                <div class="button-form">
-                    <button class="submit">Submit</button>
-                </div>
-                
-                    </form>
+              
+              <label>
+                  <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
+                  <span>Phone Number</span>
+              </label>
+              
+              <label>
+                  <input class="input" type="text" placeholder="" required="">
+                  <span>Home Address</span>
+              </label>
+              
+              <label>
+                  <input class="input" type="number" placeholder="" required="" min="0">
+                  <span>Age</span>
+              </label>
+              
+              <label>
+                  <input class="input" type="text" placeholder="" required="" min="0">
+                  <span>Taxable Income</span>
+              </label>
+              
+              <label id="states-label">
+                <select class="input" required="" id="states">
+                  <option value="" disabled selected>Select State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+              </select>
+              </label>
+              
+              <label>
+                  <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
+                  <span>Zip Code</span>
+              </label>
+          
+              <p id="check-p">Roof under 15 years old?</p>
+              <div class="flex" id="check-box">
+                  <label>
+                      <input type="radio" name="roof_age" value="yes" required=""> Yes
+                  </label>
+                  <label>
+                      <input type="radio" name="roof_age" value="no" required=""> No
+                  </label>
+              </div>
+          
+              <label class="upload-label">
+                  <input type="file" class="input" id="upload" required="">
+                  <span id="upload"> <i class="bi bi-upload"></i> Electricity Bill of the last month</span>
+              </label>
+          
+              <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
+              
+              <div class="button-form">
+                  <button class="submit">Submit</button>
+              </div>
+          </form>
             
             <script>
                 // Formatação de telefone
@@ -376,6 +413,7 @@
           </div>
         </div>
       </div>
+      
       <div class="fac-div-outer-container">
         <video autoplay muted loop id="bg-video">
           <source src="assets/faq.mp4" type="video/mp4">
@@ -446,6 +484,55 @@
           
       </div>
     </div>
+    <script>
+      window.addEventListener('load', () => {
+        const faqItems = document.querySelectorAll('.fac-div-faq-item');
+      
+        faqItems.forEach(item => {
+            const faqTitle = item.querySelector('.fac-div-faq-title');
+            const faqContent = item.querySelector('.fac-div-faq-content');
+            const icon = faqTitle.querySelector('i'); // Seleciona o ícone dentro do título
+      
+            faqTitle.addEventListener('click', () => {
+                console.log('FAQ title clicked:', faqTitle.textContent); // Debugging line
+                const isOpen = faqContent.classList.contains('open');
+      
+                // Fecha todos os conteúdos abertos e redefine os ícones
+                document.querySelectorAll('.fac-div-faq-content.open').forEach(content => {
+                    content.classList.remove('open');
+                    content.style.maxHeight = null;
+                    content.parentElement.classList.remove('open'); 
+                    content.previousElementSibling.querySelector('i').classList.replace('bi-arrow-down-short', 'bi-arrow-right-short');
+                });
+      
+                // Abre ou fecha o conteúdo clicado
+                if (!isOpen) {
+                    console.log('Opening content:', faqContent); // Debugging line
+                    faqContent.classList.add('open');
+                    faqContent.style.maxHeight = faqContent.scrollHeight + "px";
+                    item.classList.add('open');
+                    icon.classList.replace('bi-arrow-right-short', 'bi-arrow-down-short'); // Troca o ícone para a seta para baixo
+                } else {
+                    console.log('Closing content:', faqContent); // Debugging line
+                    faqContent.classList.remove('open');
+                    faqContent.style.maxHeight = null;
+                    item.classList.remove('open');
+                    icon.classList.replace('bi-arrow-down-short', 'bi-arrow-right-short'); // Volta o ícone para a seta para a direita
+                }
+            });
+        });
+      
+        // Fecha as FAQs ao rolar a página
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fac-div-faq-content.open').forEach(content => {
+                content.classList.remove('open');
+                content.style.maxHeight = null;
+                content.parentElement.classList.remove('open'); 
+                content.previousElementSibling.querySelector('i').classList.replace('bi-arrow-down-short', 'bi-arrow-right-short');
+            });
+        });
+      });
+      </script>
     
     <div class="geo-div">
       <img src="assets/geo.png" alt="Imagem à esquerda" class="geo-image" id="follow-image">
@@ -551,101 +638,128 @@
         <div class="form-container">
             
           <form class="form">
-              <p class="title">Get a free personalized quote</p>
-              <p class="message" style="margin-top: -20px;">All fields are required.</p>
-              
-              <div class="flex" id="name-div">
-                  <label id="Firstname">
-                      <input class="input" type="text" placeholder="" required="">
-                      <span>Firstname</span>
-                  </label>
-                  
-                  <label>
-                      <input class="input" type="text" placeholder="" required="">
-                      <span>Lastname</span>
-                  </label>
-              </div>
-              
-             
-              
-              <label>
-                  <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
-                  <span>Phone Number</span>
-              </label>
-              <label>
+            <p class="title">Get a free personalized quote</p>
+            <p class="message" style="margin-top: -20px;">All fields are required.</p>
+            
+            <div class="flex" id="name-div">
+                <label id="Firstname">
+                    <input class="input" type="text" placeholder="" required="">
+                    <span>Firstname</span>
+                </label>
+                
+                <label>
+                    <input class="input" type="text" placeholder="" required="">
+                    <span>Lastname</span>
+                </label>
+            </div>
+            
+            <label>
                 <input class="input" type="email" placeholder="" required="">
                 <span>Email</span>
             </label>
-              <label id="states-label">
-                  <select class="input" required="" id="states">
-                      <option value="" disabled selected>Select State</option>
-                      <option value="AL">Alabama</option>
-                      <option value="AK">Alaska</option>
-                      <option value="AZ">Arizona</option>
-                      <option value="AR">Arkansas</option>
-                      <option value="CA">California</option>
-                      <option value="CO">Colorado</option>
-                      <option value="CT">Connecticut</option>
-                      <option value="DE">Delaware</option>
-                      <option value="FL">Florida</option>
-                      <option value="GA">Georgia</option>
-                      <option value="HI">Hawaii</option>
-                      <option value="ID">Idaho</option>
-                      <option value="IL">Illinois</option>
-                      <option value="IN">Indiana</option>
-                      <option value="IA">Iowa</option>
-                      <option value="KS">Kansas</option>
-                      <option value="KY">Kentucky</option>
-                      <option value="LA">Louisiana</option>
-                      <option value="ME">Maine</option>
-                      <option value="MD">Maryland</option>
-                      <option value="MA">Massachusetts</option>
-                      <option value="MI">Michigan</option>
-                      <option value="MN">Minnesota</option>
-                      <option value="MS">Mississippi</option>
-                      <option value="MO">Missouri</option>
-                      <option value="MT">Montana</option>
-                      <option value="NE">Nebraska</option>
-                      <option value="NV">Nevada</option>
-                      <option value="NH">New Hampshire</option>
-                      <option value="NJ">New Jersey</option>
-                      <option value="NM">New Mexico</option>
-                      <option value="NY">New York</option>
-                      <option value="NC">North Carolina</option>
-                      <option value="ND">North Dakota</option>
-                      <option value="OH">Ohio</option>
-                      <option value="OK">Oklahoma</option>
-                      <option value="OR">Oregon</option>
-                      <option value="PA">Pennsylvania</option>
-                      <option value="RI">Rhode Island</option>
-                      <option value="SC">South Carolina</option>
-                      <option value="SD">South Dakota</option>
-                      <option value="TN">Tennessee</option>
-                      <option value="TX">Texas</option>
-                      <option value="UT">Utah</option>
-                      <option value="VT">Vermont</option>
-                      <option value="VA">Virginia</option>
-                      <option value="WA">Washington</option>
-                      <option value="WV">West Virginia</option>
-                      <option value="WI">Wisconsin</option>
-                      <option value="WY">Wyoming</option>
-                  </select>
-                
-              </label>
-           
-              
-              <label>
-                  <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
-                  <span>Zip Code</span>
-              </label>
-              
-              <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
-              
-              <div class="button-form">
-                  <button class="submit">Submit</button>
-              </div>
-              
-                  </form>
+            
+            <label>
+                <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
+                <span>Phone Number</span>
+            </label>
+            
+            <label>
+                <input class="input" type="text" placeholder="" required="">
+                <span>Home Address</span>
+            </label>
+            
+            <label>
+                <input class="input" type="number" placeholder="" required="" min="0">
+                <span>Age</span>
+            </label>
+            
+            <label>
+                <input class="input" type="text" placeholder="" required="" min="0">
+                <span>Taxable Income</span>
+            </label>
+            
+            <label id="states-label">
+              <select class="input" required="" id="states">
+                <option value="" disabled selected>Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+            </label>
+            
+            <label>
+                <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
+                <span>Zip Code</span>
+            </label>
+        
+            <p id="check-p">Roof under 15 years old?</p>
+            <div class="flex" id="check-box">
+                <label>
+                    <input type="radio" name="roof_age" value="yes" required=""> Yes
+                </label>
+                <label>
+                    <input type="radio" name="roof_age" value="no" required=""> No
+                </label>
+            </div>
+        
+            <label class="upload-label">
+                <input type="file" class="input" id="upload" required="">
+                <span id="upload"> <i class="bi bi-upload"></i> Electricity Bill of the last month</span>
+            </label>
+        
+            <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
+            
+            <div class="button-form">
+                <button class="submit">Submit</button>
+            </div>
+        </form>
           
           <script>
               // Formatação de telefone

@@ -725,7 +725,7 @@ body {
   }
   
   .dot.active {
-    background-color: #333;
+    background-color: #00cd15;
   }
     
 footer {
@@ -783,7 +783,7 @@ footer {
     width: 100%;
     height: 100%;
     border: 0;
-    filter: saturate(0%) brightness(100%);
+  
 }
   
   .footer-menu ul li {
@@ -1116,7 +1116,240 @@ header {
     border: 2px solid #fff;
     transition: 0.2s;
 }
+#quote {
+  border: 2px solid #00a721;
+  font-size: 20px;
+  background-color: #00cd14;
+}.upload-label {
+  display: block;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
 
+.upload-label:hover {
+transition: 0.2s;
+border: 2px dashed #1c6926b6;
+  background-color: #00cd1546; /* Light blue background on hover */
+}
+
+.upload-label input[type="file"] {
+  display: none; /* Hide the actual file input */
+}
+
+.upload-label span {
+  font-size: 16px;
+  color: #333;
+}
+#check-p{
+margin-top: -10px;
+color: #ccc;
+} 
+#check-box{
+margin-bottom:15px ;
+color: #888888;
+}
+/* Estiliza o input tipo radio para que a bolinha seja verde */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding: 6px;
+  position: relative;
+  background-color: white;
+}
+.form label .input + span {
+  color: rgb(10 10 10 / 50%);
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00cd15;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+#upload{
+left: 40%;
+}
+#upload i{
+color: #00cd15;
+}
+.left-dot {
+  display: none;
+ }.fac-div-faq-content {
+  overflow: hidden;
+  max-height: 0; /* Inicialmente fechado */
+  transition: max-height 0.3s ease-out;
+}
+
+.fac-div-faq-content.open {
+  max-height: 1000px; /* Um valor suficientemente grande para expandir o conteúdo */
+  transition: max-height 0.5s ease-in;
+}
+
+@media (max-width: 950px) {
+.form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 100%;
+      margin: 50px 40px 40px 40px;
+      padding: 0px;
+      box-shadow: 0px 10px 20px #00000000;
+      border-radius: 20px;
+      position: relative;
+      background-color: #ffffff;
+      color: #fff;
+      border: 1px solid #f3f3f300;
+  }
+  .popup-content .title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #2c5134;
+}
+.popup-content .form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.7em;
+}
+.popup-content .form label .input {
+  background-color: #f4f4f694;
+  color: #9b9b9b;
+  width: 65%;
+  top: 12.5px;
+  font-size: 0.9em;
+  padding: 10px 05px 05px 20px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 50px;
+  left: 20px;
+}
+.popup-content .form label .input:placeholder-shown + span {
+  top: 1px;
+  font-size: 0.7em;
+}
+.popup-content .message, .signin {
+  font-size: 15px;
+  width: 60%;
+  margin-left: 20px;
+  left: 5%;
+  font-size: 13px;
+  color: rgba(10, 10, 10, 0.7);
+}
+.popup-content .button-form {
+  width: 70%;
+  justify-content: center;
+  display: flex;
+}
+.popup-content .submit {
+  border: none;
+  outline: none;
+  padding: 20px;
+  width: 200px;
+  margin-left: 0px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #333;
+}
+.popup-content .upload-label {
+  width: 60%;
+  display: block;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.popup-content .form label .input {
+  background-color: #f4f4f694;
+  color: #9b9b9b;
+  width: 65%;
+  margin-top: -50px;
+  top: 12.5px;
+  font-size: 0.9em;
+  padding: 10px 05px 05px 20px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 50px;
+  left: 20px;
+}
+.popup-content #Firstname {
+  margin-right: -50px;
+}
+.popup-content #states {
+  width: 71%;
+  padding: 13px;
+}
+.popup-content #states {
+  width: 71%;
+  font-size: 0.7em;
+  padding: 10px 10px;
+}
+  .upload-label {
+  width: 100%;
+  display: block;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#states {
+  width: 110%;
+  padding: 13px;
+}
+#upload {
+  left: 20%;
+}
+.message, .signin {
+      font-size: 15px;
+      width: 100%;
+      margin-left: 20px;
+      left: 5%;
+      font-size: 13px;
+      color: rgba(10, 10, 10, 0.7);
+  }
+  .submit {
+  border: none;
+  outline: none;
+  padding: 20px;
+  width: 200px;
+  margin-left: 50px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #333;
+} 
+}
 .overlay-content-bottom button:hover {
     transition: 0.2s;
     transform: scale(1.1);
@@ -1141,6 +1374,7 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .left-dot {
+  display: none;
     border-bottom-right-radius: 80px;
     left: 0px; /* Posição na extremidade esquerda */
 }
@@ -1459,10 +1693,10 @@ footer .nav-actions {
   overflow: hidden;
   white-space: nowrap;
   margin: 0px 0;
-  position: relative; /* ou absolute, fixed, sticky conforme necessário */
+  margin-top: -5px;
+  position: relative;
   z-index: 2;
 }
-
 /* Estilo para a lista não ordenada */
 .right-content ul {
     list-style-type: none;
@@ -1606,6 +1840,9 @@ footer .nav-actions {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.left-dot {
+ display: flex;
 }
 .footer-container {
   display: grid;
