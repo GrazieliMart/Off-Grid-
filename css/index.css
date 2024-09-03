@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
     pad: 0;
 }
+video {
+  pointer-events: none; /* Disable interaction */
+}
+
 /* styles.css */
 /* styles.css */
 

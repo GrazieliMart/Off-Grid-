@@ -245,3 +245,12 @@ function disableVideoOnMobile() {
 
 // Chama a função quando a página carrega
 window.onload = disableVideoOnMobile;
+
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('webkitbeginfullscreen', function(e) {
+    e.preventDefault();
+  });
+  video.addEventListener('dblclick', function(e) {
+    e.preventDefault();
+  });
+});
