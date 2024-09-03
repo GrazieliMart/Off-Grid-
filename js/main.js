@@ -12,8 +12,8 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 // Keep track of the mouse position, so we can make the eye move
-let mouseX = window.innerWidth / 2;
-let mouseY = window.innerHeight / 2;
+let mouseX = window.innerWidth / 1;
+let mouseY = window.innerHeight / 1
 
 // Keep the 3D object on a global variable so we can access it later
 let object;
@@ -90,7 +90,7 @@ function animate() {
   // Make the solar move
   if (object && objToRender === "solar") {
     // I've played with the constants here until it looked good 
-    object.rotation.y = -3 + mouseX / window.innerWidth * 5;
+    object.rotation.y = -3 + mouseX / window.innerWidth * 7;
     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
   }
   renderer.render(scene, camera);

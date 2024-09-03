@@ -962,6 +962,18 @@ footer {
   line-height: 1.6; /* espaçamento entre linhas */
 }
 
+.map-container {
+  position: relative;
+  overflow: hidden;
+  height: 950px; /* Defina a altura desejada */
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0); /* Inicialmente sem deslocamento */
+  transition: transform 0.3s ease-out; /* Transição suave para o efeito parallax */
+}
 .header-dot i {
   color: #fff;
   transition: transform 0.3s ease, opacity 0.3s ease;
