@@ -91,24 +91,41 @@ window.addEventListener('scroll', () => {
           rightDotIcon.classList.remove('rotate-in');
       }, 600);
   });
- 
   const slides = document.querySelectorAll('.carousel-item');
-const dots = document.querySelectorAll('.dot');
-let currentIndex = 0;
-let slideInterval;
-
-// Função para mostrar o slide atual
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    dots[i].classList.remove('active');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  
+  // Função para mostrar o slide atual
+  function showSlide(index) {
+    if (index >= totalSlides) {
+      index = 0;
+    } else if (index < 0) {
+      index = totalSlides - 1;
+    }
+  
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+    });
+  
+    slides[index].classList.add('active');
+    document.querySelector('.carousel-slide').style.transform = `translateX(-${index * 100}%)`;
+    currentIndex = index;
+  }
+  
+  // Event listeners para as flechas
+  prevButton.addEventListener('click', () => {
+    showSlide(currentIndex - 1);
   });
-
-  slides[index].classList.add('active');
-  dots[index].classList.add('active');
-  document.querySelector('.carousel-slide').style.transform = `translateX(-${index * 100}%)`;
-}
-
+  
+  nextButton.addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+  });
+  
+  // Inicializar o slide
+  showSlide(currentIndex);
+  
 // Função para avançar para o próximo slide
 function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
@@ -200,3 +217,31 @@ document.addEventListener('contextmenu', function(event) {
       event.preventDefault();
     }
   });
+
+   // Função para detectar o sistema operacional
+   function detectDevice() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // Verifica se o usuário está em um dispositivo iOS
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+        return true;
+    }
+    return false;
+}
+
+// Função para desativar o vídeo
+function disableVideoOnMobile() {
+    const isMobile = detectDevice();
+    if (isMobile) {
+        const video = document.getElementById('myVideo');
+        if (video) {
+            video.removeAttribute('controls'); // Remove os controles
+            video.addEventListener('play', function(event) {
+                event.preventDefault(); // Impede a reprodução
+                alert('A reprodução de vídeos não é permitida em dispositivos móveis.');
+            });
+        }
+    }
+}
+
+// Chama a função quando a página carrega
+window.onload = disableVideoOnMobile;

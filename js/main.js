@@ -66,7 +66,7 @@ function adjustSaturation(hexColor, saturationFactor) {
 }
 
 // Create a light with reduced saturation
-const desaturatedColor = adjustSaturation(0xffffff, 0.2); // 50% of original saturation
+const desaturatedColor = adjustSaturation(0xffffff, 0.0); // 50% of original saturation
 const topLight = new THREE.DirectionalLight(desaturatedColor, 5); // (color, intensity)
 topLight.position.set(100, 100, 100);
 topLight.castShadow = true;
