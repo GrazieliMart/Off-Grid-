@@ -1573,13 +1573,34 @@ header button:hover .circle {
     border-radius: 10px;
     transition: transform 0.2s;
 }
-.left-image {
-    z-index: 998;
+.left-image{
+  padding: -50px;
+
 }
+.animated-div {
+  position: fixed;
+  left: -100%; /* Começa fora da tela, à esquerda */
+  top: 0;
+  width: 100vw; /* Ocupa toda a largura da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background-color: #00cd14; /* Cor de fundo da div */
+  z-index: 9999; /* Garante que a div fique sobreposta a outros elementos */
+  animation: slideInOut 1.5s linear forwards; /* Animação mais rápida */
+}
+
+@keyframes slideInOut {
+  0% {
+    left: -100%; /* Fora da tela à esquerda */
+  }
+  100% {
+    left: 100%; /* Move rapidamente para fora da tela à direita */
+  }
+}
+
 
 .right-content {
     width: 600px;
-   margin-right: 30px;
+   margin-left: 10%;
   
 }
 @keyframes slide-right {
