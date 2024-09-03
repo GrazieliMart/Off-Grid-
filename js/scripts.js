@@ -133,7 +133,7 @@ function nextSlide() {
 }
 
 // Inicia o intervalo para trocar os slides automaticamente a cada 2 segundos
-slideInterval = setInterval(nextSlide, 2000);
+slideInterval = setInterval(nextSlide, 3000);
 
 // Adiciona a troca automática dos slides ao carregar a página
 window.addEventListener('load', () => {

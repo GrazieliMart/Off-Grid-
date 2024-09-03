@@ -1653,7 +1653,23 @@ header button:hover .circle {
   background-color: #009a10; /* Cor do botão ao passar o mouse */
 }
 
+.image-slider-google1 {
+  background-color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0px 0;
+  margin-top: -5px;
+  position: relative;
+  z-index: 2;
+}
 
+.image-slider-google1 img {
+  width: 450px;
+  
+  margin-right: 150px;
+  display: inline-block;
+  animation: slide-right 25s linear infinite;
+}
 /* Linha de rolagem com menor z-index */
 .scroll-line {
   position: fixed;
@@ -1666,7 +1682,15 @@ header button:hover .circle {
   transition: height 0.5s ease-out;
   z-index: 1; /* Menor z-index */
 }
-
+.image-slider-google {
+  background-color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0px 0;
+  margin-top: -5px;
+  position: relative;
+  z-index: 2;
+}
 
 .image-slider-google img {
   width: 200px;
@@ -1875,6 +1899,13 @@ footer .nav-actions {
 }
 .left-dot {
  display: flex;
+}
+.image-slider-google1 img {
+  width: 400px;
+ 
+  margin-right: 30px;
+  display: inline-block;
+  animation: slide-right 15s linear infinite;
 }
 .footer-container {
   display: grid;

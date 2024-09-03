@@ -7,6 +7,7 @@ import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 
 // Create a Three.JS Scene
 const scene = new THREE.Scene();
+
 // Create a new camera with positions and angles
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
@@ -65,15 +66,15 @@ function adjustSaturation(hexColor, saturationFactor) {
   return color;
 }
 
-// Create a light with reduced saturation
-const desaturatedColor = adjustSaturation(0xffffff, 0.0); // 50% of original saturation
-const topLight = new THREE.DirectionalLight(desaturatedColor, 5); // (color, intensity)
+// Create a light with white color
+const whiteColor = 0xffffff;
+const topLight = new THREE.DirectionalLight(whiteColor, 1); // (color, intensity)
 topLight.position.set(100, 100, 100);
 topLight.castShadow = true;
 scene.add(topLight);
 
-
-const ambientLight = new THREE.AmbientLight(0x10, objToRender === "dino" ? 5 : 1);
+// Create ambient light with white color
+const ambientLight = new THREE.AmbientLight(whiteColor, 0.5); // (color, intensity)
 scene.add(ambientLight);
 
 // This adds controls to the camera, so we can rotate / zoom it with the mouse

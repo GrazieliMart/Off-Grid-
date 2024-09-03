@@ -241,7 +241,7 @@
 }
 .geo-content {
     /* flex: 1; */
-    padding: 70px;
+    padding: 0px;
     /* width: 0%; */
     color: #fff;
 }
@@ -257,10 +257,37 @@
     height: auto;
     margin-right: 20px;
 }
-.right-content {
-    width: 100%;
-    margin-right: 0px;
+.content-section {
+    text-align: center;
+    margin-top: -5px;
+    padding: 50px 20px;
+    background-color: #ffffff;
 }
+.carousel-text i {
+    font-size: 2rem;
+    margin-top: -10px;
+    color: #ff7f5000;
+    display: none;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    display: inline-block;
+}
+.right-content {
+        width: 70%;
+        margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 0px;
+    }
+    .carousel-item {
+        min-width: 100%;
+        margin-top: 0px;
+        height: 100%;
+        position: relative;
+    }
+    .right-content img {
+        height: 50px;
+        width: 100%;
+    }
 }
 
 
@@ -285,7 +312,7 @@
         <nav class="nav-container">
             <a href="index.html" class="logo-container">
                 <img src="assets/logo-white.png" alt="Logo" class="logo-image">
-                <video src="assets/logo-video.mp4" class="logo-video" muted></video>
+                <video src="assets/logo-video.mp4" class="logo-video" muted playsinline></video>
             </a>
     
             <div class="nav-links">
@@ -330,7 +357,7 @@
           <div class="carousel-container">
             <div class="carousel-slide">
               <div class="carousel-item active">
-                <video src="assets/services.mp4" autoplay loop muted></video>
+                <video src="assets/services.mp4" autoplay loop muted playsinline></video>
                 <div class="carousel-text">
 
             
