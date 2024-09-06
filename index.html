@@ -278,49 +278,49 @@
         
           <div class="form-container">
             
-            <form class="form">
+            <form class="form" name="contact" method="POST" data-netlify="true">
               <p class="title">Get a free personalized quote</p>
               <p class="message" style="margin-top: -20px;">All fields are required.</p>
               
               <div class="flex" id="name-div">
                   <label id="Firstname">
-                      <input class="input" type="text" placeholder="" required="">
+                      <input class="input" type="text" placeholder="" required="" name="First Name">
                       <span>First Name</span>
                   </label>
                   
                   <label>
-                      <input class="input" type="text" placeholder="" required="">
+                      <input class="input" type="text" placeholder="" required="" name="Last Name">
                       <span>Last Name</span>
                   </label>
               </div>
               <script src="js/scripts.js"></script>
               <label>
-                  <input class="input" type="email" placeholder="" required="">
+                  <input class="input" type="email" placeholder="" required="" name="email">
                   <span>Email</span>
               </label>
               
               <label>
-                  <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
+                  <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14" name="Phone Number">
                   <span>Phone Number</span>
               </label>
               
               <label>
-                  <input class="input" type="text" placeholder="" required="">
+                  <input class="input" type="text" placeholder="" required="" name="Home Adress">
                   <span>Home Address</span>
               </label>
               
               <label>
-                  <input class="input" type="number" placeholder="" required="" min="0">
+                  <input class="input" type="number" placeholder="" required="" min="0" name="Age">
                   <span>Age</span>
               </label>
               
               <label>
-                  <input class="input" type="text" placeholder="" required="" min="0">
+                  <input class="input" type="text" placeholder="" required="" min="0" name="Txable Income">
                   <span>Taxable Income</span>
               </label>
               
               <label id="states-label">
-                <select class="input" required="" id="states">
+                <select class="input" required="" id="states" name="States">
                   <option value="" disabled selected>Select State</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -376,7 +376,7 @@
               </label>
               
               <label>
-                  <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
+                  <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10" name="Zip Code">
                   <span>Zip Code</span>
               </label>
           
@@ -391,7 +391,7 @@
               </div>
           
               <label class="upload-label">
-                  <input type="file" class="input" id="upload" required="">
+                  <input type="file" class="input" id="upload" required="" name="Electricity Bill of last Month">
                   <span id="upload"> <i class="bi bi-upload"></i> Electricity Bill of the last month</span>
               </label>
           
@@ -638,49 +638,49 @@
         <button id="close-popup"><i class="bi bi-x-circle"></i></button></div>
         <div class="form-container">
             
-          <form class="form">
+          <form class="form" name="contact" method="POST" data-netlify="true">
             <p class="title">Get a free personalized quote</p>
             <p class="message" style="margin-top: -20px;">All fields are required.</p>
             
             <div class="flex" id="name-div">
                 <label id="Firstname">
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" type="text" placeholder="" required="" name="First Name">
                     <span>First Name</span>
                 </label>
                 
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" type="text" placeholder="" required="" name="Last Name">
                     <span>Last Name</span>
                 </label>
             </div>
-            
+            <script src="js/scripts.js"></script>
             <label>
-                <input class="input" type="email" placeholder="" required="">
+                <input class="input" type="email" placeholder="" required="" name="email">
                 <span>Email</span>
             </label>
             
             <label>
-                <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14">
+                <input class="input" type="text" id="phone" placeholder="" required="" maxlength="14" name="Phone Number">
                 <span>Phone Number</span>
             </label>
             
             <label>
-                <input class="input" type="text" placeholder="" required="">
+                <input class="input" type="text" placeholder="" required="" name="Home Adress">
                 <span>Home Address</span>
             </label>
             
             <label>
-                <input class="input" type="number" placeholder="" required="" min="0">
+                <input class="input" type="number" placeholder="" required="" min="0" name="Age">
                 <span>Age</span>
             </label>
             
             <label>
-                <input class="input" type="text" placeholder="" required="" min="0">
+                <input class="input" type="text" placeholder="" required="" min="0" name="Txable Income">
                 <span>Taxable Income</span>
             </label>
             
             <label id="states-label">
-              <select class="input" required="" id="states">
+              <select class="input" required="" id="states" name="States">
                 <option value="" disabled selected>Select State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -736,7 +736,7 @@
             </label>
             
             <label>
-                <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10">
+                <input class="input" type="text" id="zip" placeholder="" required="" maxlength="10" name="Zip Code">
                 <span>Zip Code</span>
             </label>
         
@@ -751,7 +751,7 @@
             </div>
         
             <label class="upload-label">
-                <input type="file" class="input" id="upload" required="">
+                <input type="file" class="input" id="upload" required="" name="Electricity Bill of last Month">
                 <span id="upload"> <i class="bi bi-upload"></i> Electricity Bill of the last month</span>
             </label>
         
