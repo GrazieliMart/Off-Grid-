@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,23 @@
     padding: 40px 40px 40px 0px;
     border-radius: 0px;
 }
+.form label .input + span {
+    color: rgb(10 10 10 / 50%);
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:focus + span,
+.form label .input:not(:placeholder-shown) + span {
+    color: #00cd14;
+    top: 5px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
 
 </style>
 <!-- Meta Pixel Code -->
@@ -69,7 +87,7 @@
     <header>
         <!-- Left Dot -->
         <div class="header-dot left-dot">
-          <a href="contact.html"><button ><i class="bi bi-brightness-high"></i></button></a>
+          <a href='contact.html'><button ><i class="bi bi-brightness-high"></i></button></a>
         </div>
     
         <!-- Right Dot -->
@@ -79,21 +97,21 @@
     
         <!-- Navigation bar -->
         <nav class="nav-container">
-            <a href="index.html" class="logo-container">
+            <a class='logo-container' href='/'>
                 <img src="assets/logo-white.png" alt="Logo" class="logo-image">
                 <video src="assets/logo-video.mp4" class="logo-video" muted playsinline playsinline></video>
             </a>
     
             <div class="nav-links">
-                <a href="index.html">HOME</a>
-                <a href="services.html">SERVICES</a>
-                <a href="contact.html">CONTACT</a>
+                <a href='index.html'>HOME</a>
+                <a href='services.html'>SERVICES</a>
+                <a href='contact.html'>CONTACT</a>
             </div>
     
             <div class="nav-actions">  
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
                
-                <a href="contact.html">
+                <a href='contact.html'>
                 <button class="learn-more">
                     <span class="circle" aria-hidden="true">
                       <span class="icon arrow"></span>
@@ -107,9 +125,9 @@
         <!-- Hidden Menu -->
         <div class="side-menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='services.html'>SERVICES</a></li>
+                <li><a href='contact.html'>CONTACT</a></li>
                 <li><a href="https://www.instagram.com/ogenergyofficial?igsh=MzRlODBiNWFlZA%3D%3D"><i class="bi bi-instagram"></i></a></li> 
             </ul>
         </div>
@@ -139,7 +157,7 @@
 
         <!-- Bottom Overlay Content -->
         <div class="overlay-content-bottom">
-           <a href="contact.html">
+           <a href='/contact'>
             
             <button id="quote">GET A QUOTE</button></a> 
         </div>
@@ -253,7 +271,7 @@
                 <li>Benefit from government incentives and tax credits.</li>
             </ul>
             
-           <a href="services.html"> <button class="action-button">KNOW MORE</button></a>
+           <a href='/services'> <button class="action-button">KNOW MORE</button></a>
             
         </div>
         <div class="left-image">
@@ -295,7 +313,7 @@
         
           <div class="form-container">
             
-            <form class="form" name="contact" method="POST" data-netlify="true">
+            <form class='form' enctype='multipart/form-data' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
               <p class="title">Get a free personalized quote</p>
               <p class="message" style="margin-top: -20px;">All fields are required.</p>
 
@@ -322,8 +340,8 @@
               </label>
 
               <label>
-                  <input class="input" type="text" name="home_address" placeholder="" required="">
-                  <span>Home Address</span>
+                  <input class="input" type="text" name="home_address" placeholder="" >
+                  <span>Home Address (OPTIONAL)</span>
               </label>
 
               <label>
@@ -332,8 +350,8 @@
               </label>
 
               <label>
-                  <input class="input" type="text" name="taxable_income" placeholder="" required="" min="0">
-                  <span>Taxable Income</span>
+                  <input class="input" type="text" name="taxable_income" placeholder=""  min="0">
+                  <span>Taxable Income (OPTIONAL)</span>
               </label>
 
               <label id="states-label">
@@ -408,12 +426,13 @@
               </div>
 
               <label class="upload-label">
-                  <input type="file" class="input" name="electricity_bill" id="upload" required="">
-                  <span id="upload"> <i class="bi bi-upload"></i> Electricity Bill of the last month</span>
-              </label>
+                <input type="file" class="input" name="electricity_bill" id="upload">
+                <span id="upload"><i class="bi bi-upload"></i> Electricity Bill of the last month (OPTIONAL)</span>
+            </label>
+            
 
              
-              <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
+              <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href='/privacy-policy'>Terms of Service.</a></p>
               <div class="button-form">
                   <button class="submit" type="submit">Submit</button>
               </div>
@@ -507,7 +526,7 @@
             </div>
         </div></div></div>
         <div class="fac-div-footer"><p class="footer-text">Have a different question?</p>
-         <a href="contact.html"> <button class="footer-btn">TALK TO A MANAGER</button></a>
+         <a href='/contact'> <button class="footer-btn">TALK TO A MANAGER</button></a>
           
       </div>
     </div>
@@ -576,7 +595,7 @@
             <li>Gain energy independence and protect yourself from rising energy costs.</li>
             <li>Benefit from government incentives and tax credits.</li>
           </ul>
-          <button class="action-button"><a href="contact.html">Qualify your house for 0$</a></button>
+          <button class="action-button"><a href='/contact'>Qualify your house for 0$</a></button>
         </div>
       </div>
     </div>
@@ -614,10 +633,10 @@
     <div class="footer-menu">
       <ul>
         <li><h1>MEET OFF GRID</h1></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="services.html">SERVICES</a></li>
+        <li><a href='/'>HOME</a></li>
+        <li><a href='/services'>SERVICES</a></li>
       
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href='/contact'>CONTACT</a></li>
       </ul>
     </div>
 
@@ -640,14 +659,14 @@
       <div class="footer-menu">
         <ul>
           <li><h1>NEED HELP?</h1></li>
-          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href='/contact'>CONTACT US</a></li>
           <li><a href="#">CONTACT EMAIL</a></li>
-          <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+          <li><a href='/privacy-policy'>PRIVACY POLICY</a></li>
         </ul>
       </div>
   </div></div>
   <div class="align-footer">
-    <a href="contact.html"> <p><button><i class="bi bi-geo-alt-fill"></i> Enter Your Location</button></p></a>
+    <a href='/contact'> <p><button><i class="bi bi-geo-alt-fill"></i> Enter Your Location</button></p></a>
  </div>
 <div class="overlay" id="overlay"></div>
 
@@ -658,7 +677,7 @@
         <button id="close-popup"><i class="bi bi-x-circle"></i></button></div>
         <div class="form-container">
             
-          <form class="form" name="contact" method="POST" data-netlify="true">
+          <form class='form' enctype='multipart/form-data' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
             <p class="title">Get a free personalized quote</p>
             <p class="message" style="margin-top: -20px;">All fields are required.</p>
 
@@ -776,7 +795,7 @@
             </label>
 
            
-            <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href="privacy-policy.html">Terms of Service.</a></p>
+            <p class="signin">By clicking below, I authorize OFF GRID ENERGY to call me and send messages about OFF GRID ENERGY products and services at the telephone number I entered above. Data and your personal info will not be repassed to others. You also agree to our <a href='/privacy-policy'>Terms of Service.</a></p>
             <div class="button-form">
                 <button class="submit" type="submit">Submit</button>
             </div>

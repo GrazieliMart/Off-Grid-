@@ -247,14 +247,7 @@ video {
     font-size: 0.9em;
   }
   
-  .form label .input:focus + span,
-  .form label .input:valid + span {
-    color: #00cd14;
-    top: 5px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
+ 
   .input {
     font-size: medium;
   }
