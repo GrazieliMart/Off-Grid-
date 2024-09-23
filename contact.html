@@ -203,13 +203,18 @@ input[type="radio"]:checked::before {
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1563353681274518');
+    
+    // Aqui está o token da API sendo utilizado para inicializar o pixel
+    fbq('init', '1563353681274518', {
+      external_id: 'EAAFnDW3xb1MBO8Dxs6REEzvmdRtY0VPZB00gpZCd6I9xekb3tsZBxqZAqhpIRKLhnrpSFSjaGarecB0bRNrneUHBLPRyD2eEgOMqKWYPevtuhc2HBVwnEMTkVqrzZB9q9BQgSsndm2rD2lZCGPDLb4DZAzG2Ak5ApvatyvsndgdqZCxsgm3bZBYdlbRLXfhGboXBUlQZDZD'
+    });
+    
     fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1563353681274518&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1563353681274518&ev=PageView&noscript=1"
+  /></noscript>
+  
 </head>
 <body>
    
