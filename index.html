@@ -63,6 +63,7 @@
 }
 
 </style>
+<!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -72,13 +73,17 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1563353681274518');
+  
+  // Aqui está o token da API sendo utilizado para inicializar o pixel
+  fbq('init', '1563353681274518', {
+    external_id: 'EAAFnDW3xb1MBOZBaUTujf9ZBqzdh9ClmcfUoiDl6EHDOKdlG42Pnqr1ZAANgQXXgVQIDHjlNZCbEgQVJBZB7NDdnlXMUUkQTbBRhBRvaFzWfZC8o9rb6lchnZAvkZCYVvyO15l3VsYREZALqAzZBgctXoPPM8YdEGf685vkOUiR0ZCCpkxUMLQQMLv8pluJvs8F9uk25wZDZD'
+  });
+  
   fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1563353681274518&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1563353681274518&ev=PageView&noscript=1"
+/></noscript>
 </head>
 <body>
    
@@ -304,10 +309,9 @@
     </div>
 
       
-      <div class="form-container">
+    <!--  <div class="form-container">
       
-      
-        <!-- Segunda linha: Texto e ícones à esquerda, formulário à direita -->
+       Segunda linha: Texto e ícones à esquerda, formulário à direita
         <div class="info-form-container">
         
           <div class="form-container">
@@ -435,7 +439,7 @@
               <div class="button-form">
                   <button class="submit" type="submit">Submit</button>
               </div>
-          </form>
+          </form>-->
          
           
           
@@ -594,7 +598,7 @@
             <li>Gain energy independence and protect yourself from rising energy costs.</li>
             <li>Benefit from government incentives and tax credits.</li>
           </ul>
-          <button class="action-button"><a href='/contact'>Qualify your house for 0$</a></button>
+          <button class="action-button"><a href='contact.html'>Qualify your house for 0$</a></button>
         </div>
       </div>
     </div>
